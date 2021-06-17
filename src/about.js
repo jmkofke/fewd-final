@@ -28,28 +28,28 @@ const carousel = document.getElementById("carousel");
 function changeCarouselForward() {
   i++;
   if (i === 0) {
-    carousel.style.backgroundImage = "url('../img/friends1.jpeg')";
+    carousel.style.backgroundImage = "url('./img/friends1.jpeg')";
   } else if (i === 1) {
-    carousel.style.backgroundImage = "url('../img/friends2.jpeg')";
+    carousel.style.backgroundImage = "url('./img/friends2.jpeg')";
   } else if (i === 2) {
-    carousel.style.backgroundImage = "url('../img/friends3.jpeg')";
+    carousel.style.backgroundImage = "url('./img/friends3.jpeg')";
   } else if (i === 3) {
     i = 0;
-    carousel.style.backgroundImage = "url('../img/friends1.jpeg')";
+    carousel.style.backgroundImage = "url('./img/friends1.jpeg')";
   }
 }
 
 function changeCarouselBackward() {
   i--;
   if (i === 0) {
-    carousel.style.backgroundImage = "url('../img/friends1.jpeg')";
+    carousel.style.backgroundImage = "url('./img/friends1.jpeg')";
   } else if (i === 1) {
-    carousel.style.backgroundImage = "url('../img/friends2.jpeg')";
+    carousel.style.backgroundImage = "url('./img/friends2.jpeg')";
   } else if (i === 2) {
-    carousel.style.backgroundImage = "url('../img/friends3.jpeg')";
+    carousel.style.backgroundImage = "url('./img/friends3.jpeg')";
   } else if (i === -1) {
     i = 2;
-    carousel.style.backgroundImage = "url('../img/friends3.jpeg')";
+    carousel.style.backgroundImage = "url('./img/friends3.jpeg')";
   }
 }
 
