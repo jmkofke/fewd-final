@@ -1,0 +1,353 @@
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  .shown {
+    display: block !important;
+  }
+  
+  /* HEADER */
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    align-items: center;
+  }
+  
+  .logo {
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .nav-option {
+    padding: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  
+  .nav-option:hover {
+    background-color: grey;
+  }
+  
+  .hamburger-menu {
+    display: none;
+  }
+  
+  .side-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: 0.4s ease-in-out;
+    backface-visibility: hidden;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(231, 124, 76),
+      rgb(217, 219, 51),
+      rgb(75, 198, 209),
+      rgb(29, 65, 128)
+    );
+  }
+  
+  .show-menu {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  
+  #close {
+    position: absolute;
+    right: 30px;
+    font-size: 15px;
+  }
+  
+  .side-menu-options-container {
+    padding-top: 30px;
+    text-align: center;
+  }
+  
+  .side-menu-option {
+    padding: 5px 30px;
+    font-size: 20px;
+  }
+  
+  .side-menu-option-2 {
+    padding: 5px 50px;
+    font-size: 16px;
+  }
+  
+  .side-menu-option:hover,
+  .side-menu-option-2:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  
+  @media (max-width: 780px) {
+    .nav {
+      display: none;
+    }
+    .hamburger-menu {
+      display: flex;
+      width: 30px;
+      height: 30px;
+      padding-right: 10px;
+    }
+  
+    .hamburger {
+      width: 100%;
+    }
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background-color: lightgray;
+  }
+  
+  .dropdown-option {
+    padding: 20px;
+  }
+  .dropdown-option:hover {
+    background-color: grey;
+    color: white;
+  }
+  
+  /* HERO */
+  
+  .hero-container {
+    background-image: url("../img/hero-background-red.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-main {
+    background-color: firebrick;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+  }
+  
+  .menu-button {
+    margin: 30px;
+    padding: 20px;
+    background-color: darkred;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .menu-button:hover {
+    background-color: indianred;
+  }
+  
+  @media (max-width: 780px) {
+    .hero-container {
+      background-image: none;
+      display: flex;
+      align-items: flex-start;
+      height: 360px;
+    }
+  
+    .hero-main {
+      width: 100%;
+      margin-left: 0px;
+      padding-top: 40px;
+    }
+  
+    .menu-button {
+      margin-top: 10px;
+    }
+  }
+  
+  /* Middle Section */
+  
+  .middle-container {
+    background-color: grey;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+  }
+  
+  .middle-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    padding: 30px;
+  }
+  
+  .middle-button {
+    padding: 20px;
+    width: 200px;
+  }
+  
+  .events-container {
+    background-image: url("../img/calendar.jpeg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .middle-events {
+    background-color: darkorange;
+  }
+  
+  .events-button {
+    background-color: chocolate;
+  }
+  
+  .events-button:hover {
+    background-color: sandybrown;
+  }
+  
+  .catalog-container {
+    background-image: url("../img/books.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .middle-catalog {
+    background-color: gold;
+  }
+  
+  .catalog-button {
+    background-color: goldenrod;
+  }
+  
+  .catalog-button:hover {
+    background-color: yellow;
+  }
+  
+  .coffee-container {
+    background-image: url("../img/mugs.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .middle-coffee {
+    background-color: forestgreen;
+  }
+  
+  .coffee-button {
+    background-color: darkgreen;
+  }
+  
+  .coffee-button:hover {
+    background-color: olivedrab;
+  }
+  
+  @media (max-width: 780px) {
+    .events-container,
+    .catalog-container,
+    .coffee-container {
+      background-image: none;
+    }
+  
+    .middle-container {
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 780px;
+    }
+  
+    .middle-section {
+      width: 100%;
+    }
+  }
+  
+  /* Footer */
+  
+  .footer {
+    background-color: darkslateblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-text {
+    text-align: center;
+  }
+  
+  .image-attribution {
+    font-size: 12px;
+  }
+  
+  /* ABOUT US - CAROUSEL */
+  
+  .carousel-container {
+    background-image: url("../img/friends1.jpeg");
+    background-size: cover;
+    height: 500px;
+  }
+  
+  .arrow-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 60px;
+    height: 500px;
+  }
+  
+  @media (max-width: 780px) {
+    .carousel-container {
+      height: 200px;
+    }
+    .arrow-container {
+      height: 200px;
+    }
+  }
+  
